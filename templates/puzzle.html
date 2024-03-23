@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiziverse - Memory Match Game</title>
+    <link rel="stylesheet" href="../Styles/puzzle.css">
+    <link rel="stylesheet" href="../Styles/styles.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M256-213.847 213.847-256l224-224-224-224L256-746.153l224 224 224-224L746.153-704l-224 224 224 224L704-213.847l-224-224-224 224Z"/></svg></a></li>
+                <li><a href="../templates/Blog.html">Blog</a></li>
+                <li><a href="../templates/About.html">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <ul>
+                <li><a href="../templates/home.html">Quiziverse</a></li>
+                <li class="hideOnMobile"><a href="../templates/Blog.html">Blog</a></li>
+                <li class="hideOnMobile"><a href="../templates/About.html">About</a></li>
+                <li class="hideOnMobile"><a href="#">Contact</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="greetings">
+            <img src="../images/puzzleImages/hi.jpeg" alt="Hi There">
+            <p> WELCOME TO JUNGLE JUMBLE </p>
+        </div>
+        <div class="game-instruction">
+            <p class="instruction">See how many animal pairs you can match before the time runs out</p>
+            <p id="strt" class="start">Click Here to Start <button class="strtBtn" id="start">Start</button></p>
+        </div>
+       
+        <div class="gamecontainer">
+             <div id="timer" class="timer"></div>
+             <div class="game-grid">
+        </div>
+    </div>
+    </main>
+
+    
+
+    <script src="../Scripts/puzzle.js"></script>
+    <footer class="foooter">
+        <p class="foooter-copyright">© 2020 Quiziverse, made with ♥ by Oluwatobi Jonah at ALXSE.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiziverse</title>
+    <link rel="stylesheet" href="../Styles/styles.css">
+    <link rel="stylesheet" href="../Styles/home.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M256-213.847 213.847-256l224-224-224-224L256-746.153l224 224 224-224L746.153-704l-224 224 224 224L704-213.847l-224-224-224 224Z"/></svg></a></li>
+                <li><a href="../templates/Blog.html">Blog</a></li>
+                <li><a href="../templates/About.html">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <ul>
+                <li><a href="../templates/home.html">Quiziverse</a></li>
+                <li class="hideOnMobile"><a href="../templates/Blog.html">Blog</a></li>
+                <li class="hideOnMobile"><a href="../templates/About.html">About</a></li>
+                <li class="hideOnMobile"><a href="#">Contact</a></li>
+                <li class="menu-button" style="display: none;" onclick=showSidebar()><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="games">
+            <div class="first-game">
+                <div class="game-image">
+                    <a href="../templates/quiz.html"><img src="../images/trivia.jpeg" alt="trivia quiz" ></a>
+                </div>
+                <div class="game-description">
+                    <p>Engage in Brain-Teasing Fun with Trivia Games</p>
+                </div>
+            </div>
+            <div class="second-game">
+                <div class="game-image">
+                    <a href="./puzzle.html"><img src="../images/puzzle.jpeg" alt="puzzle challenges" ></a>
+                </div>
+                <div class="game-description">
+                    <p>Engage in Brain-Teasing Fun with Trivia Games</p>
+                </div>
+            </div>
+            <div class="third-game">
+                <div class="game-image">
+                    <a href="#"><img src="../images/educational.jpeg" alt="educational games" ></a>
+                </div>
+                <div class="game-description">
+                    <p>Engage in Brain-Teasing Fun with Trivia Games</p>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    <script src="../Scripts/scripts.js"></script>
+    <!-- Footer -->
+    <footer class="foooter">
+        <p class="foooter-copyright">© 2020 Quiziverse, made with ♥ by Oluwatobi Jonah at ALXSE.</p>
+    </footer>
+</body>
+</html>

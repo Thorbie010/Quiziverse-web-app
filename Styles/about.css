@@ -1,0 +1,43 @@
+/* Style the main section */
+main {
+    max-width: 800px; /* Set maximum width */
+    margin: 0 auto; /* Center the main section */
+    padding: 20px; /* Add padding */
+  }
+  
+  /* Style the mission section */
+  #mission {
+    margin-bottom: 40px; /* Add space between sections */
+  }
+  
+  /* Style the team section */
+  #team {
+    margin-bottom: 40px; /* Add space between sections */
+  }
+  
+  .team-member {
+    text-align: center; /* Center content */
+  }
+  
+  .team-member img {
+    width: 150px; /* Set image width */
+    border-radius: 50%; /* Make image round */
+    margin-bottom: 10px; /* Add space below image */
+  }
+  
+  /* Style the values section */
+  #values {
+    margin-bottom: 40px; /* Add space between sections */
+  }
+  
+  #values ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+  }
+  
+  #values li {
+    margin-bottom: 10px; /* Add space between list items */
+  }
+  
+  /* Add more styles as needed */
+  

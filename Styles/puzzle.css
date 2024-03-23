@@ -1,0 +1,129 @@
+main {
+    margin-left: 20px;
+    height: 130vh;
+    background-color: bisque;
+}
+.greetings{
+    display: flex;
+    align-items: center;
+}
+.greetings p{
+    font-family: 'Comic Sans MS', cursive;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bolder;
+    color: palevioletred;
+    margin-left: 10px;
+}
+
+.game-instruction p{
+    margin-top: 20px;
+}
+
+.gamecontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    flex-direction: column;
+}
+
+.timer{
+    font-family: 'Comic Sans MS', cursive;
+    font-size: medium;
+}
+.time{
+    border: 2px black solid;
+    padding: 3px;
+    border-radius: 20px;
+    color: red;
+    border-color: blue;
+    width: 100px;
+}
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 100px); /* Adjust as per your grid size */
+    gap: 10px;
+    justify-self: center;
+    margin-top: 10px;
+}
+
+.instruction, .start{
+    font-family: 'Comic Sans MS', cursive;
+    font-size: large;
+}
+
+.instruction{
+    color: rgb(212, 0, 255);
+}
+
+.start{
+    color: green;
+    text-align: center;
+}
+
+.strtBtn{
+    padding: 5px;
+    width: 70px;
+    font-size: large;
+    font-family: 'Comic Sans MS', cursive;
+    background-color: palevioletred;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.card {
+    width: 100px;
+    height: 100px;
+    background-image: url('../images/puzzleImages/puzzlecover.jpeg');
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none; /* Hide the contents of the card */
+}
+img{
+    width: 80px;
+    height: 80px;
+}
+
+.foooter{
+    bottom: 0;
+    position: relative;
+    border-top: yellowgreen 2px solid;
+    width: 100%;
+    height: 10%;
+    text-align: center;
+}
+@media (max-width: 800px) {
+    html{
+        background-color: bisque;
+    }
+    main{
+        height: 80vh;
+    }
+    .foooter{
+        position: relative;
+        margin-top: 30px;
+        height: 10px;
+    }
+    .card {
+        width: 70px;
+        height: 70px;
+    }
+    .game-grid {
+        gap: 5px;
+        grid-template-columns: repeat(4, 70px); 
+    }
+    .card {
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+}

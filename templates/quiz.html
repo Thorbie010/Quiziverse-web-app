@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="../Styles/styles.css">
+    <link rel="stylesheet" href="../Styles/home.css">
+    <link rel="stylesheet" href="../Styles/quiz.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M256-213.847 213.847-256l224-224-224-224L256-746.153l224 224 224-224L746.153-704l-224 224 224 224L704-213.847l-224-224-224 224Z"/></svg></a></li>
+                <li><a href="../templates/Blog.html">Blog</a></li>
+                <li><a href="../templates/About.html">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <ul>
+                <li><a href="../templates/home.html">Quiziverse</a></li>
+                <li class="hideOnMobile"><a href="../templates/Blog.html">Blog</a></li>
+                <li class="hideOnMobile"><a href="../templates/About.html">About</a></li>
+                <li class="hideOnMobile"><a href="#">Contact</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="main-heading">
+            <h1>WELCOME TO TRIVIA QUIZ</h1>
+        </div>
+        <div class="quiz-description">
+            <p id="quiz-para">choose questions from a wide variety of subjects for a duration of 1minute</p>
+        </div>
+        <div class="quiz-section">
+            <form id="quizForm">
+            <label for="subjects">Choose a subject:</label>
+            <select id="subjects">
+            <option value="math">Math</option>
+            <option value="science">Science</option>
+            <option value="wildLife">Wild Life</option>
+            </select>
+            <input type="submit" value="Start Quiz">
+        </form>
+        
+            <div id="quiz" style="display: none;">
+                <div class="quiz-container">
+                    <p id="timer" class="timer"></p>
+                    <h2 id="question"></h2>
+                    <div class="options" id="options"></div>
+                    <button id="skipBtn">SKIP</button>
+                </div>
+            </div>
+        
+            <p id="results" class="results"></p>
+        </div>
+        
+   </main>
+   <script src="../Scripts/scripts.js"></script>
+   <footer class="foooter">
+    <p class="foooter-copyright">© 2020 Quiziverse, made with ♥ by Oluwatobi Jonah at ALXSE.</p>
+    </footer>
+</body>
+</html>
