@@ -128,6 +128,7 @@ nav li:first-child a {
     color: #d73953;
     font-size: xx-large;
     font-weight: 700;
+    text-decoration: none;
 }
 .sidebar{
     position: fixed;
