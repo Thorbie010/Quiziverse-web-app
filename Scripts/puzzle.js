@@ -54,7 +54,7 @@ document.getElementById('start').addEventListener('click', handleCardClick);
 function startTimer(card, cardClickListener) {
     // Function to start the timer
     startTime = new Date().getTime();
-    let secondsLeft = 30;
+    let secondsLeft = 180;
     const timerElement = document.getElementById('timer');
 
     // Update the timer every second
